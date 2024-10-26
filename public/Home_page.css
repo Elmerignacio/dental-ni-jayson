@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5faff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #e6f2ff;
+  border-bottom: 2px solid #b3d9ff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width:70px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  color: #1a75ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px; 
+}
+
+nav a:hover {
+  background-color: #1a75ff; 
+  color: white;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%; 
+  max-width: 800px; 
+  height: 300px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; 
+  margin-top: 120px;
+}
+
+.banner-slide {
+  display: flex;
+  width: 300%; 
+  transition: transform 1s ease-in-out;
+}
+
+.banner-slide img {
+  width: 33.33%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.profile-icon img {
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid #1a75ff;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  background-color: #1a75ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #0047b3;
+}
+
+footer {
+  background-color: #e6f2ff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-top: 2px solid #b3d9ff;
+  margin-top: auto;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  color: #1a1a1a;
+}
+
+.social-icons {
+  display: flex; 
+  align-items: center; 
+}
+
+
+.fb {
+  width: 60px; 
+  height: 60px;
+  cursor: pointer;
+}
+
+.insta {
+  width: 90px; 
+  height: 60px;
+  cursor: pointer;
+}
+
+.email {
+  width: 57px;
+  cursor: pointer;
+}

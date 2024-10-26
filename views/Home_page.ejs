@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic Appointment System</title>
+    <link rel="stylesheet" href="Home_page.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/logo_dental.png" alt="Clinic Logo">
+            <h1>DENTAL CLINIC <br> APPOINTMENT SYSTEM</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/Login_page">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/Login_page">Login</a></li>
+                <li><a href="/Register_page">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner-container">
+        <div class="banner-slide">
+            <img src="banner1.png" alt="Dental Image 1">
+            <img src="banner1.png" alt="Dental Image 2">
+            <img src="banner1.png" alt="Dental Image 3">
+        </div>
+    </section>
+
+    <div class="center-content">
+        <div class="profile-icon">
+            <img src="/doctor.png" alt="Doctor Icon">
+            <p>(Welcome to)</p>
+        </div>
+        <div class="buttons">
+            <button>Appointment</button>
+            <button>View Services</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>Clinic Address: ___________________</p>
+            <p>Hours of Operation: ___________________</p>
+        </div>
+
+        <div>
+            <img class= "fb" src="/fblogo.png" alt="Facebook">
+            <img class= "insta" src="/instalogo.png" alt="Instagram">
+            <img class= "email" src="/email.logo.png" alt="Email">
+        </div>
+    </footer>
+
+
+    <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.banner-slide img');
+    const totalImages = images.length;
+
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        updateBanner();
+    }
+
+    function updateBanner() {
+        document.querySelector('.banner-slide').style.transform = `translateX(-${currentIndex * (100 / totalImages)}%)`;
+    }
+
+    setInterval(showNextImage, 3000); 
+
+    </script>
+</body>
+</html>
